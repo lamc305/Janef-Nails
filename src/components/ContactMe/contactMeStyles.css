@@ -1,0 +1,113 @@
+#contactMe {
+  min-height: 100vh;
+  min-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #F2ECE9;
+}
+
+.contactMe__container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  width: 85vw;
+  margin: 0 auto;
+}
+
+.contactMe__information {
+  padding: 20px;
+}
+
+.contactMe__information div h3 {
+  font-size: 2.1rem;
+  margin-bottom: 10px;
+}
+
+.contactMe__information div p {
+  font-size: 1.6rem;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.contactMe__information hr {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  color: #000;
+  opacity: .8;
+}
+
+.contactMe__form {
+  padding: 20px;
+}
+
+.contactMe__form h2 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.contactMe__form p {
+  font-size: 1.5rem;
+  width: 50vw;
+  margin-bottom: 20px;
+}
+
+.contactMe__form hr {
+  height: 3px;
+  background-color: #F27777;
+  opacity: .5;
+  width: 8vw;
+  margin-bottom: 20px;
+}
+
+form {
+  padding: 10px;
+  gap: 20px;
+}
+
+form input {
+  padding: 10px 20px;
+  border-radius: 6px;
+  width: 50%;
+  outline: none;
+  border: .5px solid #00000050;
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+
+form div {
+  display: flex;
+}
+
+form textarea {
+  resize: none;
+  padding: 15px;
+  outline: none;
+  border: 1px solid #00000050;
+  border-radius: 6px;
+}
+
+form button {
+  display: block;
+  margin: 25px 0 0;
+  padding: 10px 20px;
+  border-radius: 6px;
+  outline: none;
+  border: 1px solid #F27777;
+  background-color: #F27777;
+  color: white;
+  cursor: pointer;
+  box-shadow: 3px 3px 3px #000;
+  transition-property: background, color;
+  transition-duration: .5s;
+}
+
+form button:hover {
+  background: #fff;
+  color: #000;
+  border-color: #fff;
+}
+
+form button:active {
+  box-shadow: none;
+  transform: translateY(2px);
+}

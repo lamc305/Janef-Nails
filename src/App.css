@@ -1,4 +1,6 @@
-* {
+*,
+*::after,
+*::before {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -6,5 +8,13 @@
 
 html,
 body {
-  font-size: 10px;
+  font-size: 62.5%;
+  margin: 0;
+  scroll-behavior: smooth;
+  font-family: 'Roboto', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
