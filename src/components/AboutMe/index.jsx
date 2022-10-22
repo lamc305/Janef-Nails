@@ -1,6 +1,8 @@
-import './aboutMeStyles.css'
 import img1 from '../../assets/slide-img-1.png'
+import './aboutMeStyles.css'
+
 function AboutMe() {
+
   return (
     <section className='aboutMe' id='aboutMe'>
       <div className="aboutMe__container">
