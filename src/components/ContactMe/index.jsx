@@ -1,8 +1,8 @@
-import './contactMeStyles.css'
-import { ImLocation2 } from 'react-icons/im'
-import { BsFillTelephoneFill } from 'react-icons/bs'
 import { AiOutlineMail } from 'react-icons/ai'
 import { BiTimeFive } from 'react-icons/bi'
+import { BsFillTelephoneFill } from 'react-icons/bs'
+import { ImLocation2 } from 'react-icons/im'
+import './contactMeStyles.css'
 
 function ContactMe() {
 
@@ -36,7 +36,7 @@ function ContactMe() {
         <article className='contactMe__information'>
           <div>
             <h3>Address</h3>
-            <div>
+            <div className='container__icon'>
               <ImLocation2 className='icon' />
               <p>Washington, USA 6036 Richmond hwy., Alexandria, VA, 2230</p>
             </div>
@@ -44,25 +44,29 @@ function ContactMe() {
           <hr />
           <div>
             <h3>Phones</h3>
-            <div>
-              <BsFillTelephoneFill />
+            <div className='container__icon'>
+              <BsFillTelephoneFill className='icon' />
               <p>+1(409)987-5874</p>
             </div>
           </div>
           <hr />
           <div>
             <h3>E-mail</h3>
-            <div>
-              <AiOutlineMail />
+            <div className='container__icon'>
+              <AiOutlineMail className='icon' />
               <p>info@demolink.org</p>
             </div>
           </div>
           <hr />
           <div>
             <h3>Opening Hours</h3>
-            <div>
-              <BiTimeFive />
-              <p></p>
+            <div className='container__icon'>
+              <BiTimeFive className='icon' />
+              <div>
+                <p>Mon - Fri: 9 am - 6 pm </p>
+                <p>Saturday: 9 am - 4 pm</p>
+                <p>Sunday: Closed</p>
+              </div>
             </div>
           </div>
 
