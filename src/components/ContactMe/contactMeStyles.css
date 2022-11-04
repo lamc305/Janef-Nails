@@ -126,3 +126,11 @@ form button:active {
   box-shadow: none;
   transform: translateY(2px);
 }
+
+.container__errors {
+  margin-top: 50px;
+}
+
+.text__error {
+  color: red;
+}
