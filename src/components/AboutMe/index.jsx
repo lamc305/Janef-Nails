@@ -1,5 +1,5 @@
-import img1 from '../../assets/slide-img-1.png'
 import './aboutMeStyles.css'
+import Carrusel from '../Carusel'
 
 function AboutMe() {
 
@@ -15,11 +15,10 @@ function AboutMe() {
             <li>Shine line a diamond</li>
           </ul>
         </div>
-        <div>
-          <img className='aboutMe__img' src={img1} alt="" />
+        <div className='aboutMe_containerCarrusel'>
+          <Carrusel />
         </div>
       </div>
-      <div className="skewed"></div>
     </section>
   )
 }

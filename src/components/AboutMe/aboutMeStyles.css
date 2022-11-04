@@ -56,3 +56,11 @@
   transform: skewY(2deg);
   transform-origin: top right;
 }
+
+.aboutMe_containerCarrusel {
+  margin: 0 auto;
+}
+
+.img__carrusel{
+  border-radius: 15px;
+}
