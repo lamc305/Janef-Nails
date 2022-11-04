@@ -2,7 +2,7 @@
   width: 100%;
   height: 65px;
   background-color: #F2ECE9;
-  box-shadow: 0 0 3px black;
+  box-shadow: 0 0 10px black;
   font-size: 1.5rem;
   position: sticky;
   top: 0;
@@ -23,9 +23,10 @@
   cursor: pointer;
 }
 
-.header nav ul li:nth-child(3) {
+.header nav ul li:nth-child(1) {
   font-family: 'Calligraffitti', cursive;
   font-size: 3rem;
+  flex: .8;
   cursor: auto;
   user-select: none;
   /* supported by Chrome and Opera */
@@ -37,4 +38,14 @@
   /* Firefox */
   -ms-user-select: none;
   /* Internet Explorer/Edge */
+}
+
+.header nav ul li:nth-child(2){
+  flex: .1;
+  text-align: center;
+}
+
+.header nav ul li:nth-child(3){
+  flex: .1;
+  text-align: center;
 }
