@@ -98,7 +98,7 @@ function ContactMe() {
                   value={values.text}
                   onChange={handleChange}
                   onBlur={handleBlur}
-                  placeholder='Hola putitas'
+                  placeholder='Hola en que puedo ayudarte?'
                 >
                 </textarea>
                 <button type="submit" disabled={isSubmitting}>
