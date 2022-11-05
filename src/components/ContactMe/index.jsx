@@ -98,6 +98,7 @@ function ContactMe() {
                   value={values.text}
                   onChange={handleChange}
                   onBlur={handleBlur}
+                  placeholder='Hola putitas'
                 >
                 </textarea>
                 <button type="submit" disabled={isSubmitting}>
@@ -124,7 +125,7 @@ function ContactMe() {
             <h3>Phones</h3>
             <div className='container__icon'>
               <BsFillTelephoneFill className='icon' />
-              <p>+1(409)987-5874</p>
+              <p>+58 424 692-3284</p>
             </div>
           </div>
           <hr />

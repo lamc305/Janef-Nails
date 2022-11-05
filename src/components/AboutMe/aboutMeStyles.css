@@ -64,3 +64,12 @@
 .img__carrusel{
   border-radius: 15px;
 }
+
+@media screen and (max-width: 720px) {
+  .aboutMe__container{
+    margin-top: 100px;
+    grid-template-columns: none;
+    grid-template-rows: 1fr 1fr;
+    margin-bottom: 100px;
+  }
+}

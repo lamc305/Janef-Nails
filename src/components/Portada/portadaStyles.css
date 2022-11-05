@@ -113,3 +113,31 @@
   left: -1.5%;
   top: 40%;
 }
+
+@media screen and (max-width: 720px){
+  .portada__container {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .portada__containerText h1{
+    margin: 0 auto;
+  }
+  .portada__containerText h2{
+    margin: 0 auto 50px;
+  }
+  .portada__containerText button {
+    margin: 50px auto
+  }
+  .portada__containerText p {
+    align-items: justify;
+  }
+  .portada__hero {
+    padding: 0;
+    margin-bottom: 100px;
+    order: 0;
+  }
+}

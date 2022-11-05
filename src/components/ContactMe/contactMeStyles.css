@@ -101,6 +101,10 @@ form textarea {
   border-radius: 6px;
 }
 
+form textarea::placeholder {
+  font-family: 'Roboto', sans-serif;
+}
+
 form button {
   display: block;
   margin: 25px 0 0;
@@ -133,4 +137,17 @@ form button:active {
 
 .text__error {
   color: red;
+}
+
+@media screen and (max-width: 720px) {
+  .contactMe__container {
+    margin-top: 100px;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: none;
+  }
+
+  .contactMe__form p {
+    width: 100%;
+    margin-bottom: 15px;
+  }
 }
