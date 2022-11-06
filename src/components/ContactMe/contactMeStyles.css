@@ -4,7 +4,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #F2ECE9;
+  background-color: #d285e5;
 }
 
 .contactMe__container {
@@ -31,7 +31,7 @@
 
 .icon {
   font-size: 2rem;
-  color: #F27777;
+  color: #49005c;
   display: flex;
   align-items: center;
   margin-right: 20px;
@@ -40,8 +40,8 @@
 .contactMe__information hr {
   margin-top: 15px;
   margin-bottom: 15px;
-  color: #000;
-  opacity: .8;
+  border: 1px solid #49005c;
+  opacity: .5;
 }
 
 .container__icon {
@@ -68,7 +68,8 @@
 
 .contactMe__form hr {
   height: 3px;
-  background-color: #F27777;
+  background-color: #000000;
+  border: 1px solid #49005c;
   opacity: .5;
   width: 8vw;
   margin-bottom: 20px;
@@ -102,7 +103,7 @@ form textarea {
 }
 
 form textarea::placeholder {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto Slab', serif;
 }
 
 form button {
@@ -111,8 +112,8 @@ form button {
   padding: 10px 20px;
   border-radius: 6px;
   outline: none;
-  border: 1px solid #F27777;
-  background-color: #F27777;
+  border: 1px solid #49005c;
+  background-color: #49005c;
   color: white;
   cursor: pointer;
   box-shadow: 3px 3px 3px #000;
@@ -136,7 +137,7 @@ form button:active {
 }
 
 .text__error {
-  color: red;
+  color: #49005c;
 }
 
 @media screen and (max-width: 720px) {
