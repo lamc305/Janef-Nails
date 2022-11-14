@@ -13,7 +13,7 @@ function Portada() {
             <p>Join now</p>
           </button>
         </div>
-        <div>
+        <div className='container__hero'>
           <img className='portada__hero' src={hero} alt="logo-hero" />
         </div>
       </div>
