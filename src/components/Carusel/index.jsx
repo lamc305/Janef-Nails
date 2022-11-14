@@ -9,50 +9,53 @@ function Carrusel() {
   return (
     <Carousel
       showArrows={true}
-      showThumbs={true}
+      showStatus={false}
+      showIndicators={false}
       infiniteLoop={true}
-      interval={2000}
+      showThumbs={true}
+      useKeyboardArrows={false}
       autoPlay={true}
+      stopOnHover={true}
+      swipeable={true}
+      interval={2000}
+      dynamicHeight={false}
       emulateTouch={true}
       animationHandler={true}
-      showIndicators={false}
-      width={350}
-      showStatus={false}
-      swipeable={true}
-      thumbWidth={50}
+      width={300}
+      thumbWidth={45}
     >
       <div>
         <img
           src={img2}
-          alt=""
+          alt="img 2"
           className='img__carrusel'
         />
       </div>
       <div>
         <img
           src={img3}
-          alt=""
+          alt="img 3"
           className='img__carrusel'
         />
       </div>
       <div>
         <img
           src={img4}
-          alt=""
+          alt="img 4"
           className='img__carrusel'
         />
       </div>
       <div>
         <img
           src={img5}
-          alt=""
+          alt="img 5"
           className='img__carrusel'
         />
       </div>
       <div>
         <img
           src={img6}
-          alt=""
+          alt="img 6"
           className='img__carrusel'
         />
       </div>
