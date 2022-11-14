@@ -4,16 +4,24 @@ import { BsFillTelephoneFill } from 'react-icons/bs'
 import { ImLocation2 } from 'react-icons/im'
 import './contactMeStyles.css'
 import { Formik } from 'formik'
+
 function ContactMe() {
+
+  function UseWhatsapp(mobileNumber, message) {
+    let number = mobileNumber.replace(/[^\w\s]/gi, "").replace(/ /g, "");
+    let url = `https://api.whatsapp.com/send/?phone=${number}`;
+    url += `&text=${encodeURI(message)}&app_absent=0`;
+
+    window.open(url);
+  };
 
   return (
     <section id="contactMe">
       <div className="contactMe__container">
         <div className='contactMe__form'>
-          <h2>Contact Me</h2>
+          <h2>Contáctame</h2>
           <hr />
-          <p>You can contact us any way that is convenient for you. We are available 24/7 via fax or email.
-            You can also use a quick contact form below or visit our salon personally.</p>
+          <p>Puedes contactarnos de la manera que te sea más sencilla. Estamos disponible 24/7 vía email o de manera telefónica. También puedes usar el formulario de contacto debajo o visitar nuestro salón personalmente.</p>
           <Formik
             initialValues={{
               email: '',
@@ -29,14 +37,14 @@ function ContactMe() {
               } else if (
                 !/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(values.email)
               ) {
-                errors.email = <p styles={{ color: red }}>This email address is invalid</p>;
+                errors.email = <p>This email address is invalid</p>;
               }
               return errors;
             }}
-            onSubmit={(values, { setSubmitting }) => {
+            onSubmit={(values) => {
+              let message = `${values.first && values.first} ${values.last && values.last} ${values.email && `\n✉️ - ${values.email}`} ${values.phone && `\n📱 - ${values.phone}`}\n${values.text && values.text}`
               setTimeout(() => {
-                alert(JSON.stringify(values, null, 2));
-                setSubmitting(false);
+                UseWhatsapp('+584246923284', message)
               }, 400);
             }}
           >
@@ -50,7 +58,7 @@ function ContactMe() {
               isSubmitting,
             }) => (
               <form onSubmit={handleSubmit}>
-                <div>
+                <div className='container__1inputs'>
                   <input
                     type="text"
                     onChange={handleChange}
@@ -69,7 +77,7 @@ function ContactMe() {
                   />
                 </div>
 
-                <div>
+                <div className='container__2inputs'>
                   <input
                     type="number"
                     name="phone"
@@ -88,7 +96,7 @@ function ContactMe() {
                     id="email"
                     placeholder='Email'
                   />
-
+                  {errors.email && touched.email && errors.email}
                 </div>
                 <textarea
                   name="text"
@@ -104,17 +112,17 @@ function ContactMe() {
                 <button type="submit" disabled={isSubmitting}>
                   Send Message
                 </button>
-                <div className='container__errors'>
+                {/* <div className='container__errors'>
 
-                  {errors.email && touched.email && errors.email}
-                </div>
+                  
+                </div> */}
               </form>
             )}
           </Formik>
         </div>
         <article className='contactMe__information'>
           <div>
-            <h3>Address</h3>
+            <h3>Dirección</h3>
             <div className='container__icon'>
               <ImLocation2 className='icon' />
               <p>Washington, USA 6036 Richmond hwy., Alexandria, VA, 2230</p>
@@ -122,10 +130,11 @@ function ContactMe() {
           </div>
           <hr />
           <div>
-            <h3>Phones</h3>
+            <h3>Teléfono</h3>
             <div className='container__icon'>
               <BsFillTelephoneFill className='icon' />
-              <p>+58 424 692-3284</p>
+              {/* <p>+58 424 692-3284</p> */}
+              <a href="tel:+584246923284">+58 424 692-3284</a>
             </div>
           </div>
           <hr />
@@ -133,18 +142,18 @@ function ContactMe() {
             <h3>E-mail</h3>
             <div className='container__icon'>
               <AiOutlineMail className='icon' />
-              <p>info@demolink.org</p>
+              <a href="mailto:yanetzy.franco1@gmail.com">Janezti Franco</a>
             </div>
           </div>
           <hr />
           <div>
-            <h3>Opening Hours</h3>
+            <h3>Horarios</h3>
             <div className='container__icon'>
               <BiTimeFive className='icon' />
               <div>
-                <p>Mon - Fri: 9 am - 6 pm </p>
-                <p>Saturday: 9 am - 4 pm</p>
-                <p>Sunday: Closed</p>
+                <p>Lun - Vie: 9 am - 6 pm </p>
+                <p>Sábado: 9 am - 4 pm</p>
+                <p>Domingo: Cerrado</p>
               </div>
             </div>
           </div>
