@@ -2,7 +2,7 @@
 	min-height: 100vh;
 	height: 100%;
 	min-width: 100%;
-	background-color: #d285e5;
+	background-color: #e1afee;
 	margin-top: -70px;
 	display: flex;
 	justify-content: center;
@@ -20,11 +20,18 @@
 
 .portada__hero {
 	width: 100%;
+	max-width: 450px;
 	object-fit: contain;
 	border-radius: 50%;
 	padding: 30px;
+	margin: 0 auto;
 }
 
+.container__hero {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
 .portada__containerText {
 	padding: 30px;
 	display: flex;
@@ -54,28 +61,26 @@
 	text-align: justify;
 }
 
-.portada__containerText button {
+.portada__containerText a {
 	background-color: #49005c;
 	color: white;
 	border: none;
 	outline: none;
 	text-transform: uppercase;
 	margin-top: 50px;
-	border-radius: 10px;
+	border-radius: 6px;
 	padding: 10px 25px;
 	cursor: pointer;
-	border: 1px solid #49005c;
-	transition-property: background-color, color;
-	transition: 1s;
+	transition-property: background, color;
+	transition: 0.5s;
 }
 
-.portada__containerText button:hover {
+.portada__containerText a:hover {
 	background-color: white;
-	border: 1px solid #49005c;
 	color: black;
 }
 
-.portada__containerText button p {
+.portada__containerText a p {
 	line-height: 20px;
 }
 
@@ -89,7 +94,7 @@
 	position: absolute;
 	height: 55px;
 	width: 97%;
-	background: #d285e5;
+	background: #e1afee;
 	bottom: 0;
 	z-index: 2;
 }
@@ -113,7 +118,7 @@
 .wave::after {
 	width: 55%;
 	height: 100%;
-	background-color: #d285e5;
+	background-color: #e1afee;
 	left: -1.5%;
 	top: 40%;
 }
