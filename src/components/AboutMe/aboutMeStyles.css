@@ -1,53 +1,50 @@
 .aboutMe {
-	max-height: 900px;
 	min-height: 100vh;
 	min-width: 100%;
 	background-color: #fefffe;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	padding-bottom: 50px;
 }
 
-
 .aboutMe__container {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
+	display: flex;
+	flex-direction: column;
 	width: 85vw;
-	max-height: 900px;
 	margin: 0 auto;
 }
 
 .aboutMe__containerText {
-	display: flex;
-	justify-content: center;
-	align-items: flex-start;
-	flex-direction: column;
+	font-size: 1.8rem;
 }
 
-@media (max-width: 768px) {
-	.aboutMe__containerText {
-		margin-top: 100px;
+.aboutMe__containerText h2 {
+	text-align: center;
+	margin-top: 40px;
+	margin-bottom: 25px;
+}
+
+.services {
+	margin-left: 15px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.services ul {
+	margin-left: 18px;
+	margin-top: 5px;
+}
+@media (min-width: 720px) {
+	.aboutMe__container {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
 	}
 }
 
-.aboutMe__container h2 {
-	font-size: 3rem;
-}
-
-.aboutMe__container p {
-	font-size: 2rem;
-	margin-bottom: 50px;
-}
-
-.aboutMe__container ul li {
-	list-style: georgian;
-	font-size: 2rem;
-}
-
-.aboutMe__img {
+.aboutMe_containerCarrusel {
 	width: 100%;
-	object-fit: contain;
-	max-height: 600px;
+	margin: 0 auto;
+	margin-top: 20px;
 }
 
 .skewed {
@@ -61,28 +58,4 @@
 	z-index: 0;
 	transform: skewY(2deg);
 	transform-origin: top right;
-}
-
-.aboutMe_containerCarrusel {
-	margin: 0 auto;
-}
-
-@media (max-width: 768px) {
-	.aboutMe_containerCarrusel {
-		margin: 50px auto;
-		padding-bottom: 150px;
-	}
-}
-
-.img__carrusel {
-	border-radius: 15px;
-}
-
-@media screen and (max-width: 720px) {
-	.aboutMe__container {
-		grid-template-columns: none;
-		grid-template-rows: 1fr 1fr;
-		margin-bottom: 100px;
-		padding-top: 0;
-	}
 }
