@@ -3,9 +3,9 @@ import { useState } from 'react'
 import './headerStyles.css'
 
 function Header() {
-	const [show, setShow] = useState(false)
+	const [show, setShow] = useState(true)
 	const transtionNavBar = () => {
-		if (window.scrollY <= 100) {
+		if (window.scrollY < 150) {
 			setShow(true)
 		} else {
 			setShow(false)
