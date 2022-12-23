@@ -1,0 +1,11 @@
+.img__carrusel {
+	object-fit: contain;
+	height: 375px;
+	margin: 0 auto;
+	border-radius: 0px;
+}
+
+.carrusel {
+	width: 300px;
+	height: 400px;
+}
