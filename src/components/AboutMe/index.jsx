@@ -6,25 +6,24 @@ function AboutMe() {
 		<section className='aboutMe' id='aboutMe'>
 			<div className='aboutMe__container'>
 				<div className='aboutMe__containerText'>
-					<h2>Toma tiempo para ti misma hoy</h2>
-					<p>Servicios:</p>
+					<h2>Toma tiempo para ti misma con nuestros servicios</h2>
 					<div className='services'>
-						<p>MANICURA RUSSA:</p>
+						<p>Manicura Russa:</p>
 						<ul>
 							<li>Manicura con esmaltado semipermanente.</li>
 							<li>Manicura con base rubber.</li>
 						</ul>
 					</div>
 					<div className='services'>
-						<p>PEDICURA:</p>
+						<p>Pedicura:</p>
 						<ul>
-							<li>Pedicura con esmaltado semipermanente</li>
+							<li>Pedicura con esmaltado semipermanente.</li>
 						</ul>
 					</div>
 					<div className='services'>
-						<p>SISTEMAS:</p>
+						<p>Sistemas:</p>
 						<ul>
-							<li>Sistema acrílico</li>
+							<li>Sistema acrílico.</li>
 						</ul>
 					</div>
 				</div>
