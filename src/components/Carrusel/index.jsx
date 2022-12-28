@@ -3,6 +3,9 @@ import img3 from '../../assets/tercero.webp'
 import img4 from '../../assets/cuarto.webp'
 import img5 from '../../assets/quinta.webp'
 import img6 from '../../assets/sexta.webp'
+import img7 from '../../assets/septima.webp'
+import img8 from '../../assets/octava.webp'
+import img9 from '../../assets/novena.webp'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { EffectCube, Pagination } from 'swiper'
 import './carrusel.css'
@@ -41,6 +44,15 @@ function Carrusel() {
 			</SwiperSlide>
 			<SwiperSlide>
 				<img src={img6} alt='img 6' className='img__carrusel' />
+			</SwiperSlide>
+			<SwiperSlide>
+				<img src={img7} alt='img 6' className='img__carrusel' />
+			</SwiperSlide>
+			<SwiperSlide>
+				<img src={img8} alt='img 6' className='img__carrusel' />
+			</SwiperSlide>
+			<SwiperSlide>
+				<img src={img9} alt='img 6' className='img__carrusel' />
 			</SwiperSlide>
 		</Swiper>
 	)
