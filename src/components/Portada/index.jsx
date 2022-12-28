@@ -1,5 +1,5 @@
 import './portadaStyles.css'
-import hero from '../../assets/LogoJanef.webp'
+import hero from '../../assets/logo.webp'
 
 function Portada() {
 	return (
