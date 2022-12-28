@@ -1,12 +1,13 @@
 .header {
 	width: 100%;
 	height: 65px;
-	background-color: #f2c9e7;
+	background-color: #7e616e;
 	box-shadow: 0 0 10px black;
 	font-size: 1.5rem;
 	position: sticky;
 	top: 0;
 	z-index: 99;
+	color: #eee;
 	transition: background, box-shadow, color;
 	transition-duration: 0.5s;
 }
@@ -19,7 +20,6 @@
 	width: 85vw;
 	margin: 0 auto;
 	max-width: 1280px;
-	/* color: white; */
 }
 
 .navigation div {

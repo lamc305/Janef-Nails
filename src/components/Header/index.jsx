@@ -5,7 +5,7 @@ import './headerStyles.css'
 function Header() {
 	const [show, setShow] = useState(true)
 	const transtionNavBar = () => {
-		if (window.scrollY < 150) {
+		if (window.scrollY < 100) {
 			setShow(true)
 		} else {
 			setShow(false)
@@ -22,8 +22,8 @@ function Header() {
 			<nav className='navigation'>
 				<a href='#home'>Janef Nails</a>
 				<div>
-					<a href='#aboutMe'>About</a>
-					<a href='#contactMe'>Contact</a>
+					<a href='#aboutMe'>Servicios</a>
+					<a href='#contactMe'>Contacto</a>
 				</div>
 			</nav>
 		</header>

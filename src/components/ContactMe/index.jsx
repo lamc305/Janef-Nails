@@ -1,7 +1,5 @@
 import { AiOutlineMail } from 'react-icons/ai'
-import { BiTimeFive } from 'react-icons/bi'
 import { BsFillTelephoneFill } from 'react-icons/bs'
-import { ImLocation2 } from 'react-icons/im'
 import './contactMeStyles.css'
 import { Formik } from 'formik'
 
@@ -23,8 +21,7 @@ function ContactMe() {
 					<p>
 						Puedes contactarnos de la manera que te sea más sencilla. Estamos
 						disponible 24/7 vía email o de manera telefónica. También puedes
-						usar el formulario de contacto debajo o visitar nuestro salón
-						personalmente.
+						usar el formulario de contacto debajo.
 					</p>
 					<Formik
 						initialValues={{
@@ -123,7 +120,7 @@ function ContactMe() {
 									placeholder='Hola en que puedo ayudarte?'></textarea>
 								{errors.email && touched.email && errors.email}
 								<button type='submit' disabled={isSubmitting}>
-									Send Message
+									Enviar Mensaje
 								</button>
 							</form>
 						)}
@@ -143,18 +140,6 @@ function ContactMe() {
 						<div className='container__icon'>
 							<AiOutlineMail className='icon' />
 							<a href='mailto:yanetzy.franco1@gmail.com'>Janezti Franco</a>
-						</div>
-					</div>
-					<hr />
-					<div>
-						<h3>Horarios</h3>
-						<div className='container__icon'>
-							<BiTimeFive className='icon' />
-							<div>
-								<p>Lun - Vie: 9 am - 6 pm </p>
-								<p>Sábado: 9 am - 4 pm</p>
-								<p>Domingo: Cerrado</p>
-							</div>
 						</div>
 					</div>
 				</article>

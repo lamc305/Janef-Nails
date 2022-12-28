@@ -12,15 +12,18 @@ function Portada() {
 						Janef Nails tiene como propósito resaltar la belleza de tus uñas
 						convirtiéndolas en arte.
 					</p>
-					<p>
-						Recuerda: ¡Cuidar de ti misma no es un gasto, es una inversión!
-						Aprovecha las oportunidades, consiéntete, amáte y comienza el día
-						con una linda manicura
+					<p className='mt-4'>
+						Recuerda:{' '}
+						<span className='different-text'>
+							¡Cuidar de ti misma no es un gasto, es una inversión! Aprovecha
+							las oportunidades, consiéntete, amáte y comienza el día con una
+							linda manicura.
+						</span>
 					</p>
 					<a
 						href='https://api.whatsapp.com/send/?phone=584246923284'
 						target='_blank'>
-						<p>Join now</p>
+						<p>Pide tu turno</p>
 					</a>
 				</div>
 				<div className='container__hero'>

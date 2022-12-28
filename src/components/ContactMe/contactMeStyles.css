@@ -4,7 +4,7 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background-color: #e1afee;
+	background-color: #f9d4db;
 }
 
 .contactMe__container {
@@ -17,6 +17,7 @@
 .contactMe__information {
 	margin-bottom: 20px;
 	padding: 20px;
+	padding-right: 0;
 }
 
 .contactMe__information div h3 {
@@ -30,7 +31,7 @@
 
 .icon {
 	font-size: 2rem;
-	color: #49005c;
+	color: #7e616e;
 	display: flex;
 	align-items: center;
 	margin-right: 20px;
@@ -39,7 +40,7 @@
 .contactMe__information hr {
 	margin-top: 15px;
 	margin-bottom: 15px;
-	border: 1px solid #49005c;
+	border: 1px solid #7e616e;
 	opacity: 0.5;
 }
 
@@ -57,6 +58,7 @@
 
 .contactMe__form {
 	padding: 20px;
+	padding-left: 0;
 }
 
 .contactMe__form h2 {
@@ -65,7 +67,7 @@
 }
 
 .contactMe__form p {
-	font-size: 1.5rem;
+	font-size: 1.6rem;
 	width: 50vw;
 	margin-bottom: 15px;
 	text-align: justify;
@@ -74,7 +76,7 @@
 .contactMe__form hr {
 	height: 3px;
 	background-color: #000000;
-	border: 1px solid #49005c;
+	border: 1px solid #7e616e;
 	opacity: 0.5;
 	width: 8vw;
 	margin-bottom: 20px;
@@ -122,9 +124,9 @@ form button {
 	padding: 10px 20px;
 	border-radius: 6px;
 	outline: none;
-	border: 1px solid #49005c;
-	background-color: #49005c;
-	color: white;
+	border: 1px solid #7e616e;
+	background-color: #7e616e;
+	color: #eee;
 	cursor: pointer;
 	box-shadow: 3px 3px 3px #000;
 	transition-property: background-color, color;
@@ -138,9 +140,9 @@ form button {
 }
 
 form button:hover {
-	background-color: #fff;
+	background-color: #eee;
 	color: #000;
-	border-color: #fff;
+	outline: #eee;
 }
 
 form button:active {
@@ -178,7 +180,7 @@ form button:active {
 }
 
 .text__error {
-	color: #49005c;
+	color: #7e616e;
 }
 
 @media screen and (max-width: 768px) {
