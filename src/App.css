@@ -12,8 +12,12 @@ body {
 	margin: 0;
 	scroll-behavior: smooth;
 	font-family: 'Roboto Slab', serif;
+	color: #222;
 }
 
+button {
+	font-family: 'Roboto Slab', serif;
+}
 a {
 	text-decoration: none;
 	color: inherit;
