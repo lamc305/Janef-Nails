@@ -1,8 +1,7 @@
 .img__carrusel {
-	object-fit: contain;
-	height: 375px;
-	margin: 0 auto;
-	border-radius: 0px;
+	object-fit: cover;
+	height: 400px;
+	width: 300px;
 }
 
 .carrusel {
